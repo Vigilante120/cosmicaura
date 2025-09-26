@@ -1,0 +1,269 @@
+/* --- FONT IMPORT --- */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display:wght@700&display=swap');
+
+/* --- COLOR & FONT VARIABLES --- */
+:root {
+    /* New color palette */
+    --c-maroon: #5B0E2D;
+    --c-burgundy: #4A0E1E;
+    --c-cream: #F9F1E5;
+
+    /* Primary Colors */
+    --primary-red: #C62828;
+    --primary-yellow: #FFD700;
+    --accent-red: #FF6B35;
+    --accent-yellow: #FFC107;
+
+    /* Header Color */
+    --header-color: #681C18;
+    
+    /* Text Colors */
+    --white-text: #FFFFFF;
+    --dark-text: #1A1A1A;
+    
+    /* Background Colors */
+    --main-bg: #FFF8E1;
+    --card-bg: #FFFFFF;
+    --light-cream-bg: #FEFBF3;
+    
+    /* Gradient Combinations */
+    --fire-gradient: linear-gradient(135deg, var(--primary-red), var(--accent-red));
+}
+
+/* --- BASE STYLES --- */
+body {
+    font-family: 'Lato', sans-serif;
+    color: var(--dark-text);
+    background-color: var(--c-cream);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+    color: var(--primary-red);
+}
+
+/* --- NAVIGATION --- */
+.custom-navbar {
+    background-image: url('/assets/images/header-background.jpeg');
+}
+
+.navbar-brand, .nav-link {
+    color: var(--white-text) !important;
+}
+
+.navbar-nav .nav-link:hover {
+    color: var(--primary-yellow) !important;
+}
+
+.navbar-nav .nav-link.active {
+    color: var(--primary-yellow) !important;
+    border-bottom: 3px solid var(--accent-yellow);
+}
+
+.navbar-toggler {
+    border-color: #fff;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.sticky-nav {
+    position: sticky;
+    top: 80px; /* Adjust this to be just below your fixed header */
+    z-index: 1010; /* Lower than navbar but above content */
+}
+
+/* --- HEADERS (HERO & INNER PAGES) --- */
+.hero-section {
+    background: linear-gradient(135deg, rgba(198, 40, 40, 0.9), rgba(255, 107, 53, 0.8)), 
+                url('https://images.unsplash.com/photo-1590272454533-222c2847c2b2?q=80&w=2070&auto=format&fit=crop') center/cover;
+    color: var(--white-text);
+    padding: 140px 1rem 70px;
+}
+
+.page-header {
+    background-image: url('/assets/images/header-background.jpeg');
+    padding: 6rem 1rem 3rem;
+    color: var(--white-text);
+}
+
+.hero-section h1, 
+.page-header h1 {
+    color: var(--white-text);
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+}
+
+/* --- FOOTER --- */
+footer {
+    background-image: url('/assets/images/header-background.jpeg');
+    color: var(--white-text);
+}
+
+.footer-links a {
+    color: var(--white-text); 
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.2s;
+}
+
+.footer-links a:hover {
+    color: var(--primary-yellow); 
+    text-decoration: underline;
+}
+
+/* --- SERVICE CARDS (HOMEPAGE) --- */
+.services-section {
+    background-color: var(--card-bg);
+}
+
+.service-card {
+    background-color: #ffffff;
+    border-radius: 15px;
+    border: 1px solid #eee;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.service-card .icon-circle {
+    height: 70px;
+    width: 70px;
+    background: var(--main-bg);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary-red);
+}
+
+/* --- GALLERIES (GEMSTONES & ABOUT PAGE) --- */
+.gallery-item {
+    background-color: var(--card-bg);
+    padding: 1.5rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.gallery-item .image-container {
+    background-color: var(--main-bg);
+    border-radius: 10px;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 250px;
+}
+
+.gallery-item img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.gallery-item-square {
+    width: 100%;
+    padding-top: 100%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: var(--card-bg);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-item-square:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+.gallery-item-square img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: scale-down;
+    object-position: center;
+    cursor: pointer;
+}
+
+/* --- MISC & HELPERS --- */
+.bg-light-cream {
+    background-color: var(--light-cream-bg);
+}
+
+.whatsapp-float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 24px;
+    right: 24px;
+    background-color: #25d366;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 2.5rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.2s;
+    text-decoration: none !important;
+}
+
+.whatsapp-float:hover {
+    background-color: var(--primary-yellow);
+    color: #fff;
+}
+
+/* --- SOCIAL ICONS (COMBINED) --- */
+.social-icons a,
+.social-icons_contact a {
+    font-size: 2.2rem;
+    margin: 0 12px;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+/* Footer Social Icons */
+.social-icons a {
+    color: gold;
+}
+.social-icons a:hover {
+    color: var(--accent-red);
+}
+
+/* Contact Page Social Icons */
+.social-icons_contact a {
+    color: black;
+}
+.social-icons_contact a:hover {
+    color: var(--primary-red);
+}
+
+
+/* --- NUMEROLOGY CALCULATOR --- */
+#numerology-result {
+    background-color: var(--c-cream);
+    border-left: 5px solid var(--c-burgundy);
+    padding: 1.5rem;
+    margin-top: 1.5rem;
+    border-radius: 8px;
+    text-align: left;
+}
+
+#numerology-result h3 {
+    color: var(--c-burgundy);
+}
+

@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Numerology & Vastu | The Cosmic Aura</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" type="image/png" href="assets/images/logo_golden.svg">
+</head>
+<body class="d-flex flex-column min-vh-100">
+
+<div id="header-placeholder"></div>
+
+<header class="page-header text-center" data-aos="fade-down">
+    <div class="container">
+        <h1 class="display-4">Numerology & Vastu Shastra</h1>
+        <p class="lead">Unlocking harmony and success through the cosmic science of numbers and spaces.</p>
+    </div>
+</header>
+
+<main class="container py-5">
+    <div class="bg-white p-4 p-md-5 rounded shadow-sm">
+        
+        <!-- Add Numerology Banner -->
+        <div class="w-100 mb-4">
+            <img src="assets/images/numerology_gem.png" class="img-fluid w-100 rounded shadow-sm mb-3" alt="Numerology Banner" style="height: 300px; object-fit: cover;">
+        </div>
+        
+        <section class="numerology-section" data-aos="fade-up">
+            <div class="text-center">
+                <i class="fas fa-calculator fa-3x text-danger mb-3"></i>
+                <h2>Numerology – The Science of Numbers</h2>
+            </div>
+            <p>Numbers are not just digits – they carry cosmic vibrations that shape your personality, relationships, career, and destiny. Through numerology, you can discover your life path, lucky numbers, and hidden strengths.</p>
+            
+            <!-- Interactive Numerology Calculator -->
+            <div class="numerology-calculator text-center my-5 p-4 rounded bg-light-cream" data-aos="fade-up" data-aos-delay="100">
+                <h3>Find Your Life Path Number</h3>
+                <p>Enter your date of birth to reveal your unique number.</p>
+                <div class="row justify-content-center">
+                    <div class="col-md-6">
+                        <div class="input-group">
+                            <input type="date" id="birthdate-input" class="form-control form-control-lg">
+                            <button id="calculate-btn" class="btn btn-danger">Calculate</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Result will be displayed here -->
+                <div id="numerology-result" class="d-none mt-4 text-center"></div>
+            </div>
+
+            <div class="meaning-of-numbers mt-5" data-aos="fade-up" data-aos-delay="100">
+                <h4 class="text-center">The Meaning of Numbers</h4>
+                <div class="row g-4 mt-3">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-body">
+                                <h5 class="card-title">Number 1 (Sun)</h5>
+                                <ul class="list-unstyled">
+                                    <li class="mb-2"><strong>Lord:</strong> Surya (Sun) ☀️</li>
+                                    <li><strong>Traits:</strong> Leadership, ambition, independence, confidence, authority. Natural pioneers, but sometimes egoistic and dominating.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-body">
+                                <h5 class="card-title">Number 2 (Moon)</h5>
+                                <ul class="list-unstyled">
+                                    <li class="mb-2"><strong>Lord:</strong> Chandra (Moon) 🌙</li>
+                                    <li><strong>Traits:</strong> Emotional, sensitive, intuitive, imaginative. Gentle and diplomatic, but can be moody and indecisive.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-body">
+                                <h5 class="card-title">Number 3 (Jupiter)</h5>
+                                <ul class="list-unstyled">
+                                    <li class="mb-2"><strong>Lord:</strong> Brihaspati / Guru (Jupiter) ⭐</li>
+                                    <li><strong>Traits:</strong> Wisdom, creativity, discipline, spirituality. Good teachers, advisors, and planners. Can be proud or over-disciplined.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-body">
+                                <h5 class="card-title">Number 4 (Rahu/Uranus)</h5>
+                                <ul class="list-unstyled">
+                                    <li class="mb-2"><strong>Lord:</strong> Rahu (North Node) / Uranus</li>
+                                    <li><strong>Traits:</strong> Practical, hardworking, unconventional, determined. Rebellious, original thinkers. Sometimes stubborn and restless.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-body">
+                                <h5 class="card-title">Number 5 (Mercury)</h5>
+                                <ul class="list-unstyled">
+                                    <li class="mb-2"><strong>Lord:</strong> Budh (Mercury) ☿️</li>
+                                    <li><strong>Traits:</strong> Communication, intelligence, adaptability, curiosity. Charming and witty, but may lack consistency and patience.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-body">
+                                <h5 class="card-title">Number 6 (Venus)</h5>
+                                <ul class="list-unstyled">
+                                    <li class="mb-2"><strong>Lord:</strong> Shukra (Venus) ♀️</li>
+                                    <li><strong>Traits:</strong> Love, beauty, luxury, harmony. Artistic, romantic, and family-oriented. Can be materialistic or pleasure-seeking.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-body">
+                                <h5 class="card-title">Number 7 (Ketu)</h5>
+                                <ul class="list-unstyled">
+                                    <li class="mb-2"><strong>Lord:</strong> Ketu (South Node)</li>
+                                    <li><strong>Traits:</strong> Spiritual, analytical, intellectual, mysterious.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-body">
+                                <h5 class="card-title">Number 8 (Saturn)</h5>
+                                <ul class="list-unstyled">
+                                    <li class="mb-2"><strong>Lord:</strong> Shani (Saturn) ♄</li>
+                                    <li><strong>Traits:</strong> Ambitious, powerful, organized, authoritative.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-body">
+                                <h5 class="card-title">Number 9 (Mars)</h5>
+                                <ul class="list-unstyled">
+                                    <li class="mb-2"><strong>Lord:</strong> Mangal (Mars) ♂️</li>
+                                    <li><strong>Traits:</strong> Humanitarian, compassionate, courageous, idealistic.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <hr class="my-4">
+            <h4 class="text-center">Our Numerology Services:</h4>
+            <ul>
+                <li><strong>Life Path & Destiny Analysis</strong> – Understand your true purpose and journey.</li>
+                <li><strong>Name Correction</strong> – Adjusting your name vibration for success and prosperity.</li>
+                <li><strong>Business & Brand Naming</strong> – Choosing the right name for growth and recognition.</li>
+                <li><strong>Baby Name Suggestions</strong> – Giving your child a name that aligns with cosmic energy.</li>
+                <li><strong>Lucky Dates & Numbers</strong> – Finding the best times for business, travel, and important events.</li>
+            </ul>
+        </section>
+
+        <hr class="my-5">
+        
+        <!-- UPDATED VASTU SECTION with side-by-side layout -->
+        <section class="vastu-section" data-aos="fade-up" data-aos-delay="200">
+            <div class="row align-items-center g-4">
+                <!-- Left column with text content -->
+                <div class="col-lg-7">
+                    <div class="text-center text-lg-start">
+                        <i class="fas fa-home fa-3x text-danger mb-3 "></i>
+                        <h2>Vastu Shastra – Ancient Science for a Balanced Life</h2>
+                    </div>
+                    <div class="mt-4">
+                        <h4 class="text-center text-lg-start">What is Vastu Shastra?</h4>
+                        <p>Vastu Shastra is the ancient Indian science of architecture and design that guides how to build and arrange homes, offices, and buildings to attract positive energy. The word "Vastu" means dwelling, and "Shastra" means science. By following Vastu for home, office, or business, one can bring harmony, prosperity, and happiness into life.</p>
+                    </div>
+                </div>
+                
+                <!-- Right column with image -->
+                <div class="col-lg-5 text-center">
+                    <img src="assets/images/vastu.jpeg" class="img-fluid rounded shadow-sm" alt="Vastu Shastra" style="max-height: 350px; object-fit: contain;">
+                </div>
+            </div>
+
+            <!-- Remaining content continues full-width -->
+            <div class="mt-4">
+                <h4 class="text-center">Importance of Vastu Shastra in Daily Life</h4>
+                <p>Vastu is not just about construction – it's about energy balance. Our living and working spaces directly influence our thoughts, health, and success. When a property follows Vastu principles:</p>
+                <ul>
+                    <li>Wealth, success, and financial stability improve.</li>
+                    <li>Relationships and family bonds grow stronger.</li>
+                    <li>Health, peace, and happiness increase.</li>
+                    <li>Negative energies are minimized.</li>
+                    <li>Career growth and opportunities expand.</li>
+                </ul>
+            </div>
+
+            <div class="mt-4">
+                <h4 class="text-center">Benefits of Vastu Shastra</h4>
+                <p>By applying Vastu Shastra for home and office, you can experience:</p>
+                <ul>
+                    <li>Peace and happiness in personal life.</li>
+                    <li>Growth in career, job, or business.</li>
+                    <li>Increased wealth, success, and stability.</li>
+                    <li>Improved mental and physical health.</li>
+                    <li>A positive and spiritual environment.</li>
+                </ul>
+            </div>
+            
+            <div class="mt-4">
+                <h4 class="text-center">Vastu Remedies for Home and Office</h4>
+                <p>Even if a building is not constructed as per Vastu, simple remedies can balance energy without major demolition:</p>
+                <ul>
+                    <li><strong>Mirrors & Reflectors:</strong> Correct placement of mirrors to attract prosperity.</li>
+                    <li><strong>Indoor Plants:</strong> Money plant, bamboo, and Tulsi for good health and wealth.</li>
+                    <li><strong>Colors & Paintings:</strong> Wall colors and artworks that enhance positivity.</li>
+                    <li><strong>Vastu Yantras & Symbols:</strong> Swastik, Om, and Shree Yantras for protection.</li>
+                    <li><strong>Proper Lighting:</strong> Natural sunlight and lamps to remove negativity.</li>
+                    <li><strong>Room Placement:</strong> Kitchen in the southeast, bedroom in the southwest, pooja room in the northeast for balance.</li>
+                </ul>
+            </div>
+             <div class="mt-4">
+                <h4 class="text-center">Why Choose Vastu Shastra?</h4>
+                <p>Vastu Shastra is not superstition – it is a scientific approach to living in harmony with the five natural elements (Earth, Water, Fire, Air, and Space). It connects architecture, energy, and human life, making it one of the most powerful tools for overall well-being.</p>
+            </div>
+        </section>
+
+        <hr class="my-5">
+
+        <section class="why-us-section text-center" data-aos="fade-up" data-aos-delay="300">
+            <h2>Why Choose The Cosmic Aura?</h2>
+            <p class="lead">For expert guidance in Numerology & Vastu.</p>
+            <ul class="list-unstyled d-inline-block text-start">
+                <li class="mb-2 fs-5"><i class="fas fa-check-circle text-success me-2"></i>18+ years of expertise in Numerology & Vastu consultation.</li>
+                <li class="mb-2 fs-5"><i class="fas fa-check-circle text-success me-2"></i>Guidance trusted by celebrities, ministers & entrepreneurs.</li>
+                <li class="mb-2 fs-5"><i class="fas fa-check-circle text-success me-2"></i>Practical remedies that give results without unnecessary complexity.</li>
+                <li class="fs-5"><i class="fas fa-check-circle text-success me-2"></i>Personalized solutions tailored to your chart & space.</li>
+            </ul>
+        </section>
+
+    </div>
+</main>
+
+<div id="footer-placeholder"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 800,
+    once: true
+  });
+</script>
+<script src="assets/js/main.js"></script>
+
+<!-- NEW: JavaScript for Numerology Calculator -->
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const calculateBtn = document.getElementById('calculate-btn');
+        const birthdateInput = document.getElementById('birthdate-input');
+        const resultDiv = document.getElementById('numerology-result');
+
+        const numberMeanings = {
+            1: { lord: "Surya (Sun) ☀️", traits: "Leadership, ambition, independence, confidence, authority." },
+            2: { lord: "Chandra (Moon) 🌙", traits: "Emotional, sensitive, intuitive, imaginative." },
+            3: { lord: "Brihaspati / Guru (Jupiter) ⭐", traits: "Wisdom, creativity, discipline, spirituality." },
+            4: { lord: "Rahu (North Node)", traits: "Practical, hardworking, unconventional, original thinkers." },
+            5: { lord: "Budh (Mercury) ☿️", traits: "Communication, intelligence, adaptability, curiosity." },
+            6: { lord: "Shukra (Venus) ♀️", traits: "Love, beauty, luxury, harmony, artistic." },
+            7: { lord: "Ketu (South Node)", traits: "Spiritual, analytical, intellectual, mysterious." },
+            8: { lord: "Shani (Saturn)", traits: "Ambitious, powerful, organized, authoritative." },
+            9: { lord: "Mangal (Mars)", traits: "Humanitarian, compassionate, courageous, idealistic." }
+        };
+
+        const reduceToSingleDigit = (num) => {
+            let sum = num;
+            while (sum > 9) {
+                if (sum === 11 || sum === 22 || sum === 33) return sum; // Handle Master Numbers
+                sum = String(sum).split('').reduce((acc, digit) => acc + parseInt(digit), 0);
+            }
+            return sum;
+        };
+
+        calculateBtn.addEventListener('click', () => {
+            const dateValue = birthdateInput.value;
+            if (!dateValue) {
+                resultDiv.innerHTML = `<p class="mb-0 text-danger">Please select your date of birth.</p>`;
+                resultDiv.classList.remove('d-none');
+                return;
+            }
+
+            const [year, month, day] = dateValue.split('-').map(Number);
+            
+            const totalSum = day + month + year;
+            let lifePathNumber = reduceToSingleDigit(totalSum);
+
+            let meaning;
+            if (lifePathNumber === 11 || lifePathNumber === 22 || lifePathNumber === 33) {
+                 meaning = { lord: "Master Number", traits: "You possess a Master Number, indicating a higher potential and greater life challenges. A detailed consultation is recommended to understand its unique influence." };
+            } else {
+                 meaning = numberMeanings[lifePathNumber];
+            }
+            
+            resultDiv.innerHTML = `
+                <h3>Your Life Path Number is: ${lifePathNumber}</h3>
+                <p class="mb-1"><strong>Lord:</strong> ${meaning.lord}</p>
+                <p class="mb-0"><strong>Traits:</strong> ${meaning.traits}</p>
+            `;
+            resultDiv.classList.remove('d-none');
+        });
+    });
+</script>
+
+</body>
+</html>
+
